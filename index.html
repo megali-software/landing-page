@@ -15,42 +15,90 @@
       content="Software Development, Machine Learning, Data Gathering, Web Development, Software Development Agency"
     />
     <link rel="canonical" href="https://megali.dev/index.html" />
-
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
+
   <body itemscope itemtype="http://schema.org/WebSite">
-    <header>
-      <h1 itemprop="name">Megali Software</h1>
-      <p itemprop="description">
-        Building quality software for partners all around the world
-      </p>
+    <!-- NavBar -->
+    <header class="bg-white shadow shadow-gray-400">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex items-center justify-between h-16">
+          <!-- Logo + Company name -->
+          <div class="flex items-center">
+            <a href="/" class="inline-flex items-center">
+              <img
+                class="h-8 w-auto"
+                src="static/imgs/logo-megali-white-back.png"
+                alt="Megali Logo"
+              />
+              <div class="ml-2 text-4xl text-gray-700">Megali</div>
+            </a>
+          </div>
+
+          <!-- CTA Button -->
+          <div>
+            <a
+              href="https://wa.me/+5537998767196?text=Hello%20Megali%20Software!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium shadow shadow-gray-400 text-white bg-gray-900 hover:bg-gray-800"
+            >
+              Work with us
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h2>About</h2>
-        <div itemscope itemtype="https://schema.org/Organization">
-          <span itemprop="name">Megali Software</span>
-
-          Contact Details:
+      <!-- Hero -->
+      <section class="text-gray-700 body-font">
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center max-w-7xl overflow-hidden"
+        >
+          <!-- Hero content -->
           <div
-            itemprop="address"
-            itemscope
-            itemtype="https://schema.org/PostalAddress"
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center"
           >
-            Main address:
-            <span itemprop="streetAddress">Rua Aristídes Caramuru, 199</span>
-            <span itemprop="postalCode">29216-150</span>
-            <span itemprop="addressLocality">Guarapari, Brazil</span>
-            ,
+            <!-- Subheading -->
+            <p class="leading-relaxed mb-4">
+              Evidence Based Solutions
+            </p>
+
+            <!-- Main heading -->
+            <h1
+              class="title-font sm:text-4xl text-3xl font-medium text-gray-900 mb-12 max-w-md"
+            >
+              Supporting Partners With Custom Build Solutions
+            </h1>
+
+            <!-- CTA Button -->
+            <div class="flex justify-center">
+              <a
+                href="https://wa.me/+5537998767196?text=Hello%20Megali%20Software!"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex text-white bg-gray-900 border-0 py-4 px-16 focus:outline-none hover:bg-gray-800 shadow-gray-400 text-lg"
+              >
+                Request a quote
+              </a>
+            </div>
           </div>
-          Tel:<span itemprop="telephone">+55 (37) 99876-7196</span>, E-mail:
-          <span itemprop="email">contact@megali.dev</span>
+
+          <!-- Hero image -->
+          <div class="lg:max-w-7xl lg:w-full md:w-1/2 w-5/6 -z-10 absolute -top-16 right-0">
+            <lottie-player
+              src="https://assets.website-files.com/5f22c6de405700922293119c/5f3ab7cbbc9aa7aeeb6615c2_data.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+              style="width: 1600px;"
+            /></lottie-player>
+          </div>
         </div>
       </section>
     </main>
-    <footer itemscope itemtype="http://schema.org/Organization">
-      <p>Copyright &copy; 2023 <span itemprop="name">Megali</span></p>
-    </footer>
   </body>
 </html>
