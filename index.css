@@ -609,12 +609,29 @@ video {
   margin-right: auto;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -637,12 +654,41 @@ video {
   height: 2rem;
 }
 
+.max-h-3 {
+  max-height: 0.75rem;
+}
+
+.max-h-2 {
+  max-height: 0.5rem;
+}
+
+.max-h-5 {
+  max-height: 1.25rem;
+}
+
+.max-h-8 {
+  max-height: 2rem;
+}
+
+.max-h-10 {
+  max-height: 2.5rem;
+}
+
 .w-auto {
   width: auto;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-md {
@@ -659,6 +705,14 @@ video {
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .-translate-y-px {
@@ -702,6 +756,66 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
+}
+
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
+.gap-x-24 {
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+}
+
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .overflow-hidden {
@@ -771,6 +885,26 @@ video {
   padding-right: 6rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -805,6 +939,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -835,6 +979,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-green-300 {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity));
+}
+
+.text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -957,6 +1111,15 @@ video {
     margin: 4rem;
   }
 
+  .md\:m-12 {
+    margin: 3rem;
+  }
+
+  .md\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .md\:ml-16 {
     margin-left: 4rem;
   }
@@ -977,6 +1140,10 @@ video {
     margin-left: 2.5rem;
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -994,6 +1161,10 @@ video {
     width: 100%;
   }
 
+  .md\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .md\:flex-grow {
     flex-grow: 1;
   }
@@ -1004,6 +1175,11 @@ video {
 
   .md\:items-start {
     align-items: flex-start;
+  }
+
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .md\:py-16 {
@@ -1019,6 +1195,16 @@ video {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:text-left {
@@ -1068,6 +1254,15 @@ video {
     flex-grow: 1;
   }
 
+  .lg\:gap-x-16 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
+  .lg\:gap-y-6 {
+    row-gap: 1.5rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1076,6 +1271,11 @@ video {
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:text-5xl {
@@ -1103,6 +1303,15 @@ video {
 
   .xl\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .xl\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
+  .xl\:gap-y-8 {
+    row-gap: 2rem;
   }
 
   .xl\:px-24 {
