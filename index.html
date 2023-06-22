@@ -26,13 +26,13 @@
         <nav class="flex items-center justify-between h-16">
           <!-- Logo + Company name -->
           <div class="flex items-center">
-            <a href="/" class="inline-flex items-center">
+            <a href="/" class="inline-flex items-baseline">
               <img
-                class="h-8 w-auto"
+                class="h-8 w-auto translate-y-0.5"
                 src="static/imgs/logo-megali-white-back.png"
                 alt="Megali Logo"
               />
-              <div class="ml-2 text-4xl text-gray-700">Megali</div>
+              <div class="text-5xl text-gray-700 -translate-y-px">Megali</div>
             </a>
           </div>
 
@@ -42,7 +42,7 @@
               href="https://wa.me/+5537998767196?text=Hello%20Megali%20Software!"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium shadow shadow-gray-400 text-white bg-gray-900 hover:bg-gray-800"
+              class="inline-flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium shadow shadow-gray-400 text-white bg-gray-900 hover:bg-gray-800 transition"
             >
               Work with us
             </a>
@@ -55,11 +55,11 @@
       <!-- Hero -->
       <section class="text-gray-700 body-font">
         <div
-          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center max-w-7xl overflow-hidden"
+          class="container mx-auto flex px-5 py-24 flex-col items-center md:flex-row"
         >
-          <!-- Hero content -->
+          <!-- Hero message -->
           <div
-            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center"
+            class="flex flex-col items-center text-center md:w-1/2 md:ml-16 md:items-start md:text-left lg:flex-grow lg:ml-32"
           >
             <!-- Subheading -->
             <p class="leading-relaxed mb-4">
@@ -73,28 +73,37 @@
               Supporting Partners With Custom Build Solutions
             </h1>
 
-            <!-- CTA Button -->
-            <div class="flex justify-center">
+            <!-- CTA Buttons -->
+            <div class="flex justify-center flex-wrap gap-3">
               <a
                 href="https://wa.me/+5537998767196?text=Hello%20Megali%20Software!"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex text-white bg-gray-900 border-0 py-4 px-16 focus:outline-none hover:bg-gray-800 shadow-gray-400 text-lg"
+                class="text-white bg-gray-900 border border-transparent py-4 px-16 focus:outline-none hover:bg-gray-800 shadow shadow-gray-400 text-lg transition w-full md:w-fit"
               >
                 Request a quote
+              </a>
+
+              <a
+                href="https://wa.me/+5537998767196?text=Hello%20Megali%20Software!"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-black bg-white border border-gray-300 py-4 px-16 focus:outline-none hover:bg-gray-100 text-lg transition w-full md:w-fit"
+              >
+                About Megali
               </a>
             </div>
           </div>
 
-          <!-- Hero image -->
-          <div class="lg:max-w-7xl lg:w-full md:w-1/2 w-5/6 -z-10 absolute -top-16 right-0">
+          <!-- Hero animation -->
+          <div class="absolute -top-16 right-0 -z-10 overflow-hidden hidden md:block md:w-full lg:max-w-7xl">
             <lottie-player
               src="https://assets.website-files.com/5f22c6de405700922293119c/5f3ab7cbbc9aa7aeeb6615c2_data.json"
               background="transparent"
-              speed="1"
+              speed="0.4"
               loop
               autoplay
-              style="width: 1600px;"
+              style="width: 1600px; margin-top: -48px"
             /></lottie-player>
           </div>
         </div>
