@@ -645,11 +645,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -662,28 +657,16 @@ body {
   margin-bottom: 4rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.ml-16 {
-  margin-left: 4rem;
+.ml-24 {
+  margin-left: 6rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.mr-16 {
-  margin-right: 4rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
+.mr-24 {
+  margin-right: 6rem;
 }
 
 .mt-16 {
@@ -712,26 +695,6 @@ body {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-32 {
-  margin-left: 8rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.ml-28 {
-  margin-left: 7rem;
-}
-
-.mr-28 {
-  margin-right: 7rem;
-}
-
-.mr-24 {
-  margin-right: 6rem;
 }
 
 .block {
@@ -833,6 +796,11 @@ body {
   flex-grow: 1;
 }
 
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-1 {
   --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -923,11 +891,6 @@ body {
 
 .border-transparent {
   border-color: transparent;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -1103,10 +1066,6 @@ body {
   line-height: 1.625;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1234,8 +1193,8 @@ body {
 }
 
 .carousel-bullet {
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #000;
   opacity: 0.5;
@@ -1260,6 +1219,16 @@ body {
   li:nth-child(3)
   .carousel-bullet {
   opacity: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hover\:bg-gray-100:hover {
