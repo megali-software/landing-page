@@ -10,7 +10,8 @@ module.exports = {
           "0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 8px 30px 0 rgba(0, 0, 0, 0.03)",
       },
       fontFamily: {
-        'dm-serif': ['"DM Serif Display"', 'serif']
+        'dm-serif': ['"DM Serif Display"', 'serif'],
+        'dm-sans': ['"DM Sans"', 'sans']
       }
     },
   },
