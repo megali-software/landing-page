@@ -1002,6 +1002,10 @@ body {
   text-align: center;
 }
 
+.font-dm-serif {
+  font-family: "DM Serif Display", serif;
+}
+
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -1012,10 +1016,6 @@ body {
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-dm-serif {
-  font-family: "DM Serif Display", serif;
 }
 
 .text-3xl {
@@ -1239,6 +1239,26 @@ body {
   flex-direction: column;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+  color: #0C7;
+  font-weight: bold;
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1436,11 +1456,6 @@ body {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 }
 
