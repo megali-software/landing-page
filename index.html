@@ -16,7 +16,8 @@
     />
     <link rel="canonical" href="https://megali.dev/index.html" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <script src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js"></script>
   </head>
 
   <body itemscope itemtype="http://schema.org/WebSite">
@@ -95,9 +96,10 @@
 
           <!-- Hero animation -->
           <div class="absolute -top-32 lg:-top-16 right-0 -z-10 overflow-hidden hidden md:block md:w-full lg:max-w-7xl">
-            <lottie-player
-              src="https://assets.website-files.com/5f22c6de405700922293119c/5f3ab7cbbc9aa7aeeb6615c2_data.json"
+            <dotlottie-player
+              src="static/lottie/hero.lottie"
               background="transparent"
+              mode="normal"
               speed="0.4"
               loop
               autoplay
@@ -213,8 +215,9 @@
           <!-- Right column -->
           <div class="lg:ml-12 bg-white p-6 shadow-2xl shadow-gray-100">
             <div>
-              <lottie-player
-                src="https://assets3.lottiefiles.com/packages/lf20_7atrz9xp.json"
+              <dotlottie-player
+                src="static/lottie/software_product.lottie"
+                mode="normal"
                 background="transparent"
                 speed="1"
                 loop
@@ -245,8 +248,9 @@
           <!-- Left column -->
           <div class="bg-white p-6 shadow-2xl shadow-gray-100">
             <div>
-              <lottie-player
-                src="https://assets3.lottiefiles.com/packages/lf20_rI827y2g0K.json"
+              <dotlottie-player
+                src="static/lottie/ai_product.lottie"
+                mode="normal"
                 background="transparent"
                 speed="1"
                 loop
