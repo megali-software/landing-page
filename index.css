@@ -746,8 +746,50 @@ body {
   height: fit-content;
 }
 
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[450px\] {
+  height: 450px;
+}
+
 .max-h-10 {
   max-height: 2.5rem;
+}
+
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.min-h-\[450px\] {
+  min-height: 450px;
+}
+
+.min-h-\[250px\] {
+  min-height: 250px;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
+.min-h-\[370px\] {
+  min-height: 370px;
+}
+
+.min-h-\[420px\] {
+  min-height: 420px;
 }
 
 .w-10 {
@@ -1305,6 +1347,10 @@ body {
 
   .md\:h-7 {
     height: 1.75rem;
+  }
+
+  .md\:min-h-\[370px\] {
+    min-height: 370px;
   }
 
   .md\:w-fit {
