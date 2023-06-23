@@ -746,50 +746,12 @@ body {
   height: fit-content;
 }
 
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[450px\] {
-  height: 450px;
-}
-
 .max-h-10 {
   max-height: 2.5rem;
 }
 
-.min-h-fit {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
 .min-h-\[450px\] {
   min-height: 450px;
-}
-
-.min-h-\[250px\] {
-  min-height: 250px;
-}
-
-.min-h-\[400px\] {
-  min-height: 400px;
-}
-
-.min-h-\[370px\] {
-  min-height: 370px;
-}
-
-.min-h-\[420px\] {
-  min-height: 420px;
 }
 
 .w-10 {
@@ -935,6 +897,11 @@ body {
   border-color: transparent;
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -948,11 +915,6 @@ body {
 .bg-green-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(5 46 22 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 27 75 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1050,6 +1012,10 @@ body {
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-dm-serif {
+  font-family: "DM Serif Display", serif;
 }
 
 .text-3xl {
