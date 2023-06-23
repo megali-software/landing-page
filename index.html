@@ -22,7 +22,7 @@
 
   <body itemscope itemtype="http://schema.org/WebSite">
     <!-- NavBar -->
-    <header class="bg-white shadow shadow-gray-400">
+    <header class="bg-white shadow-light sticky top-0 z-50">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex items-center justify-between h-16">
           <!-- Logo + Company name -->
@@ -111,8 +111,8 @@
 
       <!-- Partners -->
       <section class="text-gray-700 body-font">
-        <div class="mx-6 md:mx-16 md:mt-6 bg-white shadow-2xl shadow-gray-100 py-6 px-8 md:px-12 lg:px-16 xl:px-24">
-          <div class="flex flex-wrap items-center justify-between gap-x-4 md:gap-x-10 lg:gap-x-16 xl:gap-x-20 gap-y-4 lg:gap-y-6 xl:gap-y-8 w-full">
+        <div class="mx-6 md:mx-16 md:mt-6 bg-white shadow-light py-6 px-8 md:px-12 lg:px-16 xl:px-24">
+          <div class="flex flex-wrap items-center justify-between gap-x-4 md:gap-x-10 lg:gap-x-16 gap-y-4 lg:gap-y-6 xl:gap-y-8 w-full">
             <img src="static/imgs/partners/0.svg" alt="streamline" class="max-h-10"/>
             <img src="static/imgs/partners/1.svg" alt="cardinal group" class="max-h-10"/>
             <img src="static/imgs/partners/2.svg" alt="cci" class="max-h-10"/>
@@ -126,7 +126,7 @@
             <img src="static/imgs/partners/10.svg" alt="ironworks" class="max-h-10"/>
             <img src="static/imgs/partners/11.svg" alt="john deere" class="max-h-10"/>
           </div>
-          <div class="mt-6 flex justify-center items-baseline flex-wrap w-full gap-4">
+          <div class="mt-8 flex justify-center items-baseline flex-wrap w-full gap-4">
             <span class="text-center font-bold">
               Supporting 50+ partners and agencies
             </span>
@@ -139,7 +139,7 @@
 
       <!-- Product Software -->
       <section class="text-gray-700 body-font">
-        <div class="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 mx-6 md:mx-16 md:mt-24 text-center md:text-left">
+        <div class="flex flex-col md:flex-row gap-8 mt-20 mx-6 md:mx-16 md:mt-24 text-center md:text-left">
           <!-- Left column -->
           <div class="max-w-lg place-self-center md:place-self-start text-gray-800">
             <h2 class="text-5xl font-serif">
@@ -213,7 +213,7 @@
           </div>
 
           <!-- Right column -->
-          <div class="lg:ml-12 bg-white p-6 shadow-2xl shadow-gray-100">
+          <div class="lg:ml-12 bg-white p-6 shadow-light">
             <div>
               <dotlottie-player
                 src="static/lottie/software_product.lottie"
@@ -222,7 +222,8 @@
                 speed="1"
                 loop
                 autoplay
-                class="w-fit"
+                class="w-fit mx-auto"
+                style="max-width: 500px"
               />
             </div>
 
@@ -244,9 +245,9 @@
 
       <!-- Product AI -->
       <section class="text-gray-700 body-font">
-        <div class="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 mx-6 md:mx-16 md:mt-24 text-center md:text-left">
+        <div class="flex flex-col-reverse md:flex-row gap-8 mt-16 mx-6 md:mx-16 md:mt-24 text-center md:text-left">
           <!-- Left column -->
-          <div class="bg-white p-6 shadow-2xl shadow-gray-100">
+          <div class="bg-white p-6 shadow-light">
             <div>
               <dotlottie-player
                 src="static/lottie/ai_product.lottie"
@@ -255,7 +256,8 @@
                 speed="1"
                 loop
                 autoplay
-                class="w-fit mb-12"
+                class="w-fit mb-12 mx-auto"
+                style="max-width: 500px"
               />
             </div>
 
