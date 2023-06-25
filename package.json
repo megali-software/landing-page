@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build:css": "postcss src/index.css -o dist/index.css",
-    "watch:css": "onchange 'src/**/*.css' -- npm run build:css",
+    "watch:css": "onchange 'src/**/*.{html,css}' -- npm run build:css",
     "build:html": "posthtml -c posthtml.json",
     "watch:html": "onchange 'src/**/*.html' -- npm run build:html",
     "build:js": "cp -r src/js dist",
