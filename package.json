@@ -1,8 +1,26 @@
 {
   "scripts": {
-    "dev": "tailwindcss -i ./tailwind.css -o ./index.css --watch"
+    "build:css": "postcss src/index.css -o dist/index.css",
+    "watch:css": "onchange 'src/**/*.css' -- npm run build:css",
+    "build:html": "posthtml -c posthtml.json",
+    "watch:html": "onchange 'src/**/*.html' -- npm run build:html",
+    "build:js": "cp -r src/js dist",
+    "watch:js": "onchange 'src/**/*.js' -- npm run build:js",
+    "build:static": "cp -r static dist && mv dist/static/*.* dist",
+    "watch:static": "onchange 'static/**/*' -- npm run build:static",
+    "build": "mkdir -p dist && run-p build:*",
+    "serve": "live-server dist --watch=dist",
+    "start": "npm run build && run-p serve watch:*"
   },
-  "dependencies": {
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "posthtml-cli": "^0.10.0",
+    "posthtml-modules": "^0.9.1",
     "tailwindcss": "^3.3.2"
   }
 }
