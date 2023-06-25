@@ -13,7 +13,7 @@ npm install --dev
 After installing, we can run:
 
 ```bash
-npm run dev
+npm start
 ```
 
 ## Deployment
