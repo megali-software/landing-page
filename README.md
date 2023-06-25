@@ -7,21 +7,13 @@ Just some html and css for the landing page.
 We use tailwindcss as a css framework. Let's install it so we can develop:
 
 ```bash
-npm install
+npm install --dev
 ```
 
 After installing, we can run:
 
 ```bash
 npm run dev
-```
-
-This will build the css so we can use in the html template.
-
-For serving the html, I'm using python http server.
-
-```bash
-python3 -m http.server
 ```
 
 ## Deployment
