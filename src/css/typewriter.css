@@ -1,10 +1,16 @@
 @keyframes blink {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .blinking-cursor {
   animation: blink 1s infinite;
-  color: #0C7;
+  color: #0c7;
   font-weight: bold;
 }
