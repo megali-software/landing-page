@@ -23,20 +23,37 @@
       <!-- CTA Buttons -->
       <div class="flex justify-center flex-wrap gap-3 max-w-sm md:max-w-2xl">
         <a
-          href="https://wa.me/+5537998767196?text=Hello%20Megali%20Software!"
+          href=""
+          onclick="try { Calendly.initPopupWidget({url: 'https://calendly.com/fernando-canteruccio/hello-megali'}); } finally { return false; }"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white bg-gray-900 border border-transparent py-4 px-16 xl:px-24 focus:outline-none hover:bg-gray-800 shadow hover:shadow-lg text-lg transition w-full md:w-fit"
+          class="text-white bg-gray-900 border border-transparent py-4 px-16 xl:px-20 focus:outline-none hover:bg-gray-800 shadow hover:shadow-lg text-lg transition w-full md:w-fit flex gap-2 justify-center items-center"
           >
-          Request a quote
+            <svg
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Schedule a call</span>
         </a>
 
-          <a
-            href="/about.html"
-            class="text-black bg-white border border-gray-300 py-4 px-16 xl:px-24 focus:outline-none hover:bg-gray-100 text-lg transition w-full md:w-fit"
-            >
-            About Megali
-          </a>
+        <a
+          href="/about.html"
+          class="text-black bg-white border border-gray-300 py-4 px-16 xl:px-20 focus:outline-none hover:bg-gray-100 text-lg transition w-full md:w-fit"
+          >
+          About Megali
+        </a>
       </div>
     </div>
 
