@@ -1,0 +1,97 @@
+<article
+  class="container mx-auto px-4 text-justify prose lg:prose-xl prose-p:font-serif prose-ol:font-serif prose-ul:font-serif prose-li:font-serif"
+>
+  <h1 class="!m-0">Effortlessly Edit Any Commit in Git History</h1>
+
+  <div
+    class="text-md text-gray-500 leading-[1.5rem] font-medium my-4"
+    role="doc-subtitle"
+  >
+    Keep your git history clean so you can find what you need easily and become
+    a better developer.
+  </div>
+
+  <module href="/blog/components/author.html"></module>
+
+  <img
+    src="https://unsplash.com/photos/DuHKoV44prg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8c29mdHdhcmV8ZW58MHx8fHwxNjkwMTI5MDYzfDA&force=true&w=1920"
+    alt="How to keep your git history clean"
+  />
+
+  <section class="text-lg">
+    <p class="text-lg text-gray-500">
+      When working with Git, a powerful and widely used version control system,
+      there are instances where you might need to modify some of your
+      repository's previous commit. Whether you are looking to fix a minor
+      error, adjust your commit message, or improve code organization in your
+      project's history, understanding how to change commits without altering
+      the subsequent ones can be a game-changer. In this blog post, we will walk
+      you through the process step by step.
+    </p>
+
+    <h2 class="text-2xl font-bold">
+      Step-by-step guide to modify any git commit
+    </h2>
+    <ol class="list-decimal text-lg text-gray-600">
+      <li>
+        Begin by initiating an interactive rebase with the root commit:
+        <pre class="text-green-400 flex">
+          <code>git rebase -i --root</code>
+        </pre>
+        You don't necessarelly need to rebase the root commit, but this will
+        allow you to modify any of the commits in your repository.
+      </li>
+      <li class="pt-5">
+        An editor will open displaying the list of your commits. In front of the
+        commit you want to modify, replace the word <code>pick</code> with
+        <code>edit</code>, e.g.:
+        <pre class="text-green-400 flex">
+          <code><span class="text-red-400">pick</span> initial commit
+<span class="text-red-400">edit</span> commit you want to modify
+<span class="text-red-400">pick</span> another commit
+<span class="text-red-400">pick</span> yet another commit
+...</code>
+        </pre>
+        Now, save and close the file.
+      </li>
+      <li class="pt-5">
+        Git will now pause at the first commit, allowing you to modify it. At
+        this point, make all the necessary changes to your files.
+      </li>
+      <li class="pt-5">
+        Stage your changes with the git add command:
+        <pre class="text-green-400 flex">
+          <code>git add .</code>
+        </pre>
+        or
+        <pre class="text-green-400 flex">
+          <code>git add &lt;specific_file&gt;</code>
+        </pre>
+      </li>
+      <li class="pt-5">
+        Then, use the <code>git commit --amend</code> command to change the
+        commit. If you don't want to alter the commit message, add the
+        <code>--no-edit</code> option as such:
+        <pre class="text-green-400 flex">
+          <code>git commit --amend --no-edit</code>
+        </pre>
+      </li>
+      <li class="pt-5">
+        Lastly, you need to replay your subsequent commits on top of the
+        modified root commit:
+        <pre class="text-green-400 flex">
+          <code>git rebase --continue</code>
+        </pre>
+      </li>
+      <li class="pt-5">You're done!</li>
+    </ol>
+
+    <h2 class="text-2xl font-bold">Conclusion</h2>
+    <p class="text-lg text-gray-500">
+      While the ability to modify any commit in Git offers great flexibility, it
+      also poses potential challenges when working in a shared repository.
+      Always be cautious when rewriting history in Git, as it can cause
+      conflicts if others have copies of the same repository.
+    </p>
+  </section>
+</article>

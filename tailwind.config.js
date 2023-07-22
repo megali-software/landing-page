@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const typography = require("@tailwindcss/typography");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,13 +11,62 @@ module.exports = {
           "0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 8px 30px 0 rgba(0, 0, 0, 0.03)",
       },
       fontFamily: {
-        'dm-serif': ['"DM Serif Display"', 'serif'],
-        'dm-sans': ['"DM Sans"', 'sans']
-      }
+        "dm-serif": ['"DM Serif Display"', "serif"],
+        "dm-sans": ['"DM Sans"', "sans"],
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              fontSize: "2.25rem",
+            },
+            p: {
+              fontSize: "1.1rem",
+            },
+            ol: {
+              fontSize: "1.1rem",
+            },
+            ul: {
+              fontSize: "1.1rem",
+            },
+            li: {
+              fontSize: "1.1rem",
+            },
+            pre: {
+              marginTop: theme("spacing.3"),
+              marginBottom: theme("spacing.3"),
+            },
+          },
+        },
+        xl: {
+          css: {
+            h1: {
+              fontSize: "2.7rem",
+            },
+            p: {
+              fontSize: "1.3rem",
+            },
+            ol: {
+              fontSize: "1.3rem",
+            },
+            ul: {
+              fontSize: "1.3rem",
+            },
+            li: {
+              fontSize: "1.3rem",
+            },
+            pre: {
+              marginTop: theme("spacing.4"),
+              marginBottom: theme("spacing.4"),
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [
-    plugin(function ({ addBase, addUtilities, theme }) {
+    typography,
+    plugin(function ({ addBase, addUtilities }) {
       addBase({
         body: {
           "-webkit-font-smoothing": "subpixel-antialiased",
