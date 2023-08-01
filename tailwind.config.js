@@ -36,6 +36,10 @@ module.exports = {
               marginTop: theme("spacing.3"),
               marginBottom: theme("spacing.3"),
             },
+            img: {
+              marginBottom: theme("spacing.1"),
+              marginTop: theme("spacing.1"),
+            },
           },
         },
         xl: {
@@ -58,6 +62,10 @@ module.exports = {
             pre: {
               marginTop: theme("spacing.4"),
               marginBottom: theme("spacing.4"),
+            },
+            img: {
+              marginBottom: theme("spacing.1"),
+              marginTop: theme("spacing.1"),
             },
           },
         },

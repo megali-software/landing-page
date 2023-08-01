@@ -4,7 +4,7 @@
   <h1 class="!m-0">Effortlessly Edit Any Commit in Git History</h1>
 
   <div
-    class="text-md text-gray-500 leading-[1.5rem] font-medium my-4"
+    class="text-md text-gray-600 leading-[1.5rem] font-medium my-4"
     role="doc-subtitle"
   >
     Keep your git history clean so you can find what you need easily and become
@@ -12,14 +12,20 @@
   </div>
 
   <module href="/blog/components/author.html"></module>
+  <module href="/blog/components/social-share.html"></module>
 
-  <img
-    src="https://unsplash.com/photos/DuHKoV44prg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8c29mdHdhcmV8ZW58MHx8fHwxNjkwMTI5MDYzfDA&force=true&w=1920"
-    alt="How to keep your git history clean"
-  />
+  <div class="flex flex-col justify-center items-center my-8 lg:my-10">
+    <img
+      src="https://unsplash.com/photos/DuHKoV44prg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8c29mdHdhcmV8ZW58MHx8fHwxNjkwMTI5MDYzfDA&force=true&w=1920"
+      alt="How to keep your git history clean"
+    />
+    <span class="mt-2 text-sm text-gray-500 font-medium">
+      Nothing better than having an organized working environment to enhance productivity
+    </span>
+  </div>
 
-  <section class="text-lg">
-    <p class="text-lg text-gray-500">
+  <section class="text-lg text-gray-600">
+    <p class="text-lg">
       When working with Git, a powerful and widely used version control system,
       there are instances where you might need to modify some of your
       repository's previous commit. Whether you are looking to fix a minor
@@ -50,7 +56,9 @@
 <span class="text-red-400">edit</span> commit you want to modify
 <span class="text-red-400">pick</span> another commit
 <span class="text-red-400">pick</span> yet another commit
-...</code>
+...
+<span class="text-red-400">pick</span> yet another commit
+</code>
         </pre>
         Now, save and close the file.
       </li>
@@ -87,7 +95,7 @@
     </ol>
 
     <h2 class="text-2xl font-bold">Conclusion</h2>
-    <p class="text-lg text-gray-500">
+    <p class="text-lg">
       While the ability to modify any commit in Git offers great flexibility, it
       also poses potential challenges when working in a shared repository.
       Always be cautious when rewriting history in Git, as it can cause
