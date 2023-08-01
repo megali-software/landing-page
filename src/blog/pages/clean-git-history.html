@@ -1,7 +1,7 @@
 <article
   class="container mx-auto px-4 text-justify prose lg:prose-xl prose-p:font-serif prose-ol:font-serif prose-ul:font-serif prose-li:font-serif"
 >
-  <h1 class="!m-0">Effortlessly Edit Any Commit in Git History</h1>
+  <h1 class="!m-0 text-gray-900">Effortlessly Edit Any Commit in Git History</h1>
 
   <div
     class="text-md text-gray-600 leading-[1.5rem] font-medium my-4"
@@ -24,8 +24,8 @@
     </span>
   </div>
 
-  <section class="text-lg text-gray-600">
-    <p class="text-lg">
+  <section class="text-lg text-gray-900">
+    <p>
       When working with Git, a powerful and widely used version control system,
       there are instances where you might need to modify some of your
       repository's previous commit. Whether you are looking to fix a minor
@@ -38,7 +38,7 @@
     <h2 class="text-2xl font-bold">
       Step-by-step guide to modify any git commit
     </h2>
-    <ol class="list-decimal text-lg text-gray-600">
+    <ol class="list-decimal">
       <li>
         Begin by initiating an interactive rebase with the root commit:
         <pre class="text-green-400 flex">
@@ -94,12 +94,21 @@
       <li class="pt-5">You're done!</li>
     </ol>
 
-    <h2 class="text-2xl font-bold">Conclusion</h2>
-    <p class="text-lg">
+    <h2 class="text-2xl font-bold">Final Notes</h2>
+    <p>
       While the ability to modify any commit in Git offers great flexibility, it
       also poses potential challenges when working in a shared repository.
       Always be cautious when rewriting history in Git, as it can cause
       conflicts if others have copies of the same repository.
     </p>
   </section>
+
+  <module href="/blog/components/separator.html"></module>
+
+  <div class="flex justify-start gap-2 flex-wrap text-gray-900 text-sm">
+    <span class="rounded-full px-4 py-2 bg-gray-100">git</span>
+    <span class="rounded-full px-4 py-2 bg-gray-100">git history</span>
+    <span class="rounded-full px-4 py-2 bg-gray-100">software development</span>
+    <span class="rounded-full px-4 py-2 bg-gray-100">software engineering</span>
+  </div>
 </article>
